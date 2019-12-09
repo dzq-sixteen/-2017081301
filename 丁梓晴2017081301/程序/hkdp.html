@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>航空订票</title>
+    <style>
+        h1{
+            font-family: cursive;
+            font-size:50px;
+            color: rgb(255, 255, 255);
+            position:relative;
+            left:230px;
+            top: 30px;
+        }
+        #jpyd{
+            color: blue;
+            position:relative;
+            left:25px;
+            top:10px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .hbxx{
+            position:relative;
+            left:10px;
+            top:10px;
+        }
+        .jz{
+        margin:auto;
+        border:1px;
+        left:150px;
+        top:100px;
+        width: 1000px;
+        
+        }
+        #ss{
+            position: relative;
+            left: 10px;
+        }
+        .cjr{
+            border: ridge;
+            position: relative;
+            left: 15px;
+            width: 680px;
+        }
+        #dy{
+             background-color: rgb(174, 172, 196);
+             width: 18cm;
+        }
+        #tj{
+            position:absolute;
+            right: 14.5cm;
+        }
+        .ann{
+            position: relative;
+            left: 10cm;
+        }
+        .zhk{
+            border: ridge;
+            
+        }
+       .zh1{
+            list-style-type: none;
+            overflow: hidden;
+       }
+       .zh2{
+            list-style-type: none;
+            overflow: hidden;
+            position: relative;
+            top: -2.3cm;
+            left: 5cm;
+       }
+       .zh3{
+            list-style-type: none;
+            overflow: hidden;
+            position: relative;
+            top: -4.5cm;
+            left: 10cm;
+       }
+       .zh4{
+            list-style-type: none;
+            overflow: hidden;
+            position: relative;
+            top: -7.2cm;
+            left: 15cm;
+       }
+       .q{
+        list-style-type: none;
+            overflow: hidden;
+       }
+       #z1{
+        text-decoration:underline;
+        font-size: 20px;
+       }
+    </style>
+    <script>
+        
+        function add()
+        {   var my = document.createElement("div");   
+       
+       my.style.position=" relative";   
+       
+       my.style="border:ridge; width:680px;left:15px;"
+       var fo=document.createElement("form");
+       var p=document.createElement("p");
+       p.style="background-color: rgb(174, 172, 196);width: 18cm;"
+       p.innerHTML="第一位乘机人：刘某某 &nbsp;"
+       var ip=document.createElement("input");
+       fo.appendChild(p);
+       my.appendChild(fo);
+       var ul=document.createElement("ul");
+       var li1=document.createElement("li");
+       li1.style="line-height:6px;"
+       var se=document.createElement("select");
+       se.style="width:162px;height:0.6cm;"
+       var op1=document.createElement("option");
+       var op2=document.createElement("option");
+       op1.innerHTML="成人机票";
+       op2.innerHTML="学生机票";
+       li1.innerHTML="购票类型：";
+       se.appendChild(op1);
+       se.appendChild(op2);
+       li1.appendChild(se);
+       
+   
+       
+       var li2=document.createElement("li");
+       var li3=document.createElement("li");
+       var li4=document.createElement("li");
+       var fo2=document.createElement("form");
+       my.appendChild(fo2);
+       var ip2=document.createElement("input");
+       li2.innerHTML="姓&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp名:&nbsp&nbsp";
+       fo2.appendChild(ip2);
+       li2.appendChild(ip2);
+       li3.innerHTML="证件类型:&nbsp&nbsp";
+       var s2=document.createElement("select");
+       var o1=document.createElement("option");
+       var o2=document.createElement("option");
+       s2.style="width:162px;height:0.6cm;"
+       s2.appendChild(o1);
+       s2.appendChild(o2);
+       fo2.appendChild(s2);
+       o1.innerHTML="护照";
+       o2.innerHTML="身份证";
+       li3.appendChild(s2);
+       
+       li4.innerHTML="证件号码:&nbsp&nbsp";
+       var ip4=document.createElement("input");
+       li4.appendChild(ip4);
+       
+       ul.appendChild(fo2);
+       ul.appendChild(li1);
+       ul.appendChild(li2);
+       ul.appendChild(li3);
+       ul.appendChild(li4);
+       my.appendChild(ul);
+       document.body.appendChild(my);
+        }
+    </script>
+</head>
+<body background="C:\Users\ASUS\Desktop\1.jpg">
+    <h1>联盟机票</h1>
+    <div class="jz" style="background-color: aliceblue;">
+        <h3 id="jpyd">机票预订</h3>
+        <hr>
+        <ul style="background-color: aquamarine;">
+                <li >航班信息</li>
+        </ul>
+        <div class="hbxx">
+            
+            <p>海南航空 M7777  &nbsp 
+                <a href="https://www.baidu.com/">[修改航班]</a>
+                <a href="https://www.baidu.com/">[退 改 签]</a>
+                &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp 2013年06月17日 11:00 周水子国际机场 ——起飞
+                &nbsp&nbsp&nbsp&nbsp&nbsp2200/成人
+            </p> 
+            <p>
+                机型738 
+                <a href="https://www.baidu.com/">经停</a> &nbsp &nbsp &nbsp 
+                <a href="https://www.baidu.com/">[修改舱位]</a>
+                &nbsp&nbsp&nbsp&nbsp &nbsp &nbsp &nbsp&nbsp&nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp&nbsp 2013年06月17日 15:40 宝安国际机场 ——到达
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp（含税费）
+            </p>
+            <hr>
+            <p>
+                总价：2200 （含税费） 人数：1人 
+                <a href="http://www.baidu.com/"> 机票明细</a>
+            </p>
+        </div>
+        <ul style="background-color: aquamarine;">
+                <li >乘客信息</li> 
+        </ul>
+        <div>
+           <form action="" id="ss">
+               在常用姓名中搜索
+               <input type="text">
+               <input type="checkbox"> 刘某某
+               <input type="checkbox"> 张某某
+               <input type="checkbox"> 王某某
+               <input type="checkbox"> 李某某
+               &nbsp &nbsp <a href="https://www.baidu.com/">更多</a>
+           </form>
+           <div class="cjr">
+               <p>
+                   <form action="">
+                       <p id="dy">第一位乘机人：刘某某&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp
+                       &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp
+                       &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp &nbsp&nbsp&nbsp&nbsp&nbsp
+                       <input type="checkbox">保存常用姓名</p>  
+                   </form>
+               </p>
+               <form action="">
+                   <ul >
+                       <li style="line-height: 6px;">购票类型：
+                           <select name="gplx" style="width: 162px;height: 0.6cm;">
+                           <option value="cr" >成人机票</option>
+                           <option value="xs">学生机票</option>
+                            </select>&nbsp2200/成人（含税费）
+                            <a href="https://www.baidu.com/">改退签</a>
+                        </li>
+                       <li>姓&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp名：&nbsp<input type="text" value="刘某某">
+                        <a href="https://www.baidu.com/">&nbsp填写说明</a></li>
+                       <li>证件类型：
+                           <select name="zjlx" style="width: 162px;height: 0.6cm;">
+                            <option value="hz" >护照</option>
+                            <option value="sfz">身份证</option>
+                             </select></li>
+                       <li>证件号码：&nbsp<input type="text" value="200000000000000000"></li>
+                   </ul>
+               </form>
+           </div>
+           <div class="cjr">
+                <p>
+                    <form action="">
+                        <p id="dy">第二位乘机人：王某某&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp &nbsp&nbsp&nbsp&nbsp&nbsp
+                        <input type="checkbox">保存常用姓名</p>  
+                    </form>
+                </p>
+                <form action="">
+                    <ul >
+                        <li style="line-height: 6px;">购票类型：
+                            <select name="gplx" style="width: 162px;height: 0.6cm;">
+                            <option value="cr" >成人机票</option>
+                            <option value="xs">学生机票</option>
+                             </select>&nbsp2200/成人（含税费）
+                             <a href="https://www.baidu.com/">改退签</a>
+                         </li>
+                        <li>姓&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp名：&nbsp<input type="text" value="王某某">
+                         <a href="https://www.baidu.com/">&nbsp填写说明</a></li>
+                        <li>证件类型：
+                            <select name="zjlx" style="width: 162px;height: 0.6cm;">
+                             <option value="hz" >护照</option>
+                             <option value="sfz">身份证</option>
+                              </select></li>
+                        <li>证件号码：&nbsp<input type="text" value="200000000000000000"></li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+        <form>
+            <input type="button" id="tj" value="添加乘客" onclick="add()">
+        </form>
+        
+        <br>
+        <ul style="background-color: aquamarine;"><li>联系人信息</li></ul>
+        <div>
+            <ul>
+                <li>联&nbsp&nbsp系&nbsp&nbsp人: <input type="text"></li>
+                <li>手机号码&nbsp: <input type="text"></li>
+                <li>联系电话&nbsp: <input type="text" style="width: 1cm;" value="区号">&nbsp<input type="text" style="width: 1.7cm;" value="电话号码">&nbsp<input type="text"style="width: 1cm;" value="分机"></li>
+                <li>传真号码&nbsp: <input type="text"style="width: 1cm;"  value="区号">&nbsp<input type="text" style="width: 1.7cm;" value="电话号码">&nbsp<input type="text"style="width: 1cm;" value="分机"></li>
+                <li>&nbsp&nbsp &nbspE-mail: <input type="text"></li>
+                <li>联系地址&nbsp: <input type="text"></li>
+            </ul>
+        </div>
+        <hr>
+        <div class="ann">
+            <button type="button" onclick="www.baidu.com">上一步</button>&nbsp&nbsp
+            <button type="button" onclick="www.baidu.com">下一步</button>
+        </div>
+        
+        <hr>
+        <div class="zhk">
+            <ul class="zh1">
+                <li id="z1">新手指南
+                    <ul class="q">
+                        <li style="font-size: 15px; text-decoration: none;">预订步骤</li>
+                        <li style="font-size: 15px; text-decoration: none;">订单查询</li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="zh2">
+                <li id="z1">支付方式
+                        <ul class="q">
+                                <li style="font-size: 15px; text-decoration: none;">在线支付</li>
+                                <li style="font-size: 15px; text-decoration: none;">开通财付通</li>
+                            </ul>
+                </li>
+            </ul>
+            <ul class="zh3">
+                <li id="z1">品质服务
+                        <ul class="q">
+                                <li style="font-size: 15px; text-decoration: none;">改退签说明</li>
+                                <li style="font-size: 15px; text-decoration: none;">行程单配送方式</li>
+                                <li style="font-size: 15px; text-decoration: none;">航空意外险</li>
+
+                            </ul>
+                </li>
+            </ul>
+            <ul class="zh4">
+                <li id="z1">帮助信息
+                        <ul class="q">
+                                <li style="font-size: 15px; text-decoration: none;">免费？</li>
+                               
+                            </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
